@@ -4,9 +4,9 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
 
 import lombok.extern.log4j.Log4j2;
+import springpractice.sample.dto.TodoDTO;
 
 @Controller
 @RequestMapping("/todo")
@@ -31,7 +31,8 @@ public class TodoController {
 	}
 	
 	@PostMapping("/register")
-	public void registerPOST() {
+	public void registerPOST(TodoDTO todoDTO) {
 		log.info("todo register POST........");
+		log.info(todoDTO);
 	}
 }

@@ -28,8 +28,7 @@
 		class="org.springframework.format.support.FormattingConversionServiceFactoryBean">
 		<property name="formatters">
 			<set>
-				<bean
-					class="springpractice.sample.controller.formatter.LocalDateFormatter" />
+				<bean class="springpractice.sample.controller.formatter.LocalDateFormatter"/>
 			</set>
 		</property>
 	</bean>
