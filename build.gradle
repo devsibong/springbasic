@@ -73,6 +73,12 @@ dependencies {
     // https://mvnrepository.com/artifact/org.mybatis/mybatis-spring
 	implementation group: 'org.mybatis', name: 'mybatis-spring', version: '2.0.7'
     
+    // https://mvnrepository.com/artifact/org.modelmapper/modelmapper
+	implementation group: 'org.modelmapper', name: 'modelmapper', version: '3.0.0'
+	    
+    // https://mvnrepository.com/artifact/org.hibernate.validator/hibernate-validator
+	implementation group: 'org.hibernate.validator', name: 'hibernate-validator', version: '6.2.5.Final'
+    
 }
 
 

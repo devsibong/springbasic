@@ -33,6 +33,6 @@
 		</property>
 	</bean>
 	
-	<mvc:annotation-driven conversion-service="conversionService"/>
+	<mvc:annotation-driven conversion-service="conversionService" />
 
 </beans>
