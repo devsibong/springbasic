@@ -63,8 +63,9 @@
 							<c:forEach items="${dtoList}" var="dto">
 							<tr>
 								<th scope="row"><c:out value="${dto.tno}"/></th>
-								<td><c:out value="${dto.title}"/></td>
-								<td><c:out value="${dto.writer}"/></td>
+								
+								<td><a href="/todo/read?tno=${dto.tno}" class="text-decoration-none"><c:out value="${dto.title}"/></td>
+								<td><c:out value="${dto.writer}"/></a></td>
 								<td><c:out value="${dto.dueDate}"/></td>
 								<td><c:out value="${dto.finished}"/></td>
 							</tr>
