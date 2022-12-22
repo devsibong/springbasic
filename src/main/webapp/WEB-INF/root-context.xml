@@ -35,6 +35,7 @@
 	
 	<mybatis:scan base-package="springpractice.sample.mapper"></mybatis:scan>
 	<context:component-scan base-package="springpractice.sample.config"/>
+	<context:component-scan base-package="springpractice.sample.service"/>
 
 
 </beans>
