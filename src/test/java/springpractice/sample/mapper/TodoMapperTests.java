@@ -1,7 +1,5 @@
 package springpractice.sample.mapper;
 
-import static org.springframework.test.web.servlet.result.MockMvcResultHandlers.log;
-
 import java.time.LocalDate;
 import java.util.List;
 
@@ -43,5 +41,11 @@ public class TodoMapperTests {
 		List<TodoVO> voList = todoMapper.selectAll();
 		
 		voList.forEach(vo -> log.info(vo));
+	}
+	
+	@Test
+	public void testSelectOne() {
+		TodoVO todoVO = todoMapper.selectOne(1L);
+		log.info(todoVO);
 	}
 }
